@@ -36,6 +36,10 @@
     <servlet-class>org.example.DisplayHeader</servlet-class>
   </servlet>
   <servlet>
+    <servlet-name>ReadCookies</servlet-name>
+    <servlet-class>org.example.ReadCookies</servlet-class>
+  </servlet>
+  <servlet>
     <servlet-name>NeedsAuth</servlet-name>
     <servlet-class>org.example.NeedsAuth</servlet-class>
   </servlet>
@@ -53,6 +57,11 @@
   <servlet-mapping>
     <servlet-name>DHeader</servlet-name>
     <url-pattern>/header/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>ReadCookies</servlet-name>
+    <url-pattern>/cookies/*</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
