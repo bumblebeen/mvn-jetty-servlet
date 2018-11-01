@@ -43,6 +43,10 @@
     <servlet-name>NeedsAuth</servlet-name>
     <servlet-class>org.example.NeedsAuth</servlet-class>
   </servlet>
+    <servlet>
+    <servlet-name>SessionTrack</servlet-name>
+    <servlet-class>org.example.SessionTrack</servlet-class>
+  </servlet>
 
   <servlet-mapping>
     <servlet-name>Hello</servlet-name>
@@ -52,6 +56,11 @@
   <servlet-mapping>
     <servlet-name>PooCheckbox</servlet-name>
     <url-pattern>/CheckBox/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>SessionTrack</servlet-name>
+    <url-pattern>/session/*</url-pattern>
   </servlet-mapping>
 
   <servlet-mapping>
