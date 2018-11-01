@@ -7,7 +7,7 @@ import javax.servlet.http.*;
 
 // Extend HttpServlet class
 public class CheckBox extends HttpServlet {
- 
+  private static final long serialVersionUID = 4L;
    // Method to handle GET method request.
    public void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {

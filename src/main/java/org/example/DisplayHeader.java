@@ -8,7 +8,7 @@ import java.util.*;
  
 // Extend HttpServlet class
 public class DisplayHeader extends HttpServlet {
- 
+    private static final long serialVersionUID = 4L;
    // Method to handle GET method request.
    public void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
@@ -49,7 +49,7 @@ public class DisplayHeader extends HttpServlet {
          "</tr>\n"
       );
  
-      Enumeration headerNames = request.getHeaderNames();
+      Enumeration<String> headerNames = request.getHeaderNames();
     
       while(headerNames.hasMoreElements()) {
          String paramName = (String)headerNames.nextElement();

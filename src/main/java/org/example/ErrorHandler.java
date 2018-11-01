@@ -4,11 +4,10 @@ package org.example;
 import java.io.*;
 import javax.servlet.*;
 import javax.servlet.http.*;
-import java.util.*;
 
 // Extend HttpServlet class
 public class ErrorHandler extends HttpServlet {
- 
+      private static final long serialVersionUID = 4L;
    // Method to handle GET method request.
    public void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
