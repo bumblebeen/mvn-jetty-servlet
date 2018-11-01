@@ -12,9 +12,8 @@ public class NeedsAuth extends HttpServlet {
    // Method to handle GET method request.
    protected void doGet(HttpServletRequest request, HttpServletResponse response)
       throws ServletException, IOException {
-      
       // Set error code and reason.
-      response.sendError(404, "Need authentication!!!" );
+      response.sendError(405, "Need authentication!!!" );
    }
    
    // Method to handle POST method request.
