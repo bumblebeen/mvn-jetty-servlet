@@ -47,6 +47,15 @@
     <servlet-name>SessionTrack</servlet-name>
     <servlet-class>org.example.SessionTrack</servlet-class>
   </servlet>
+  <servlet>
+   <servlet-name>DatabaseAccess</servlet-name>
+   <servlet-class>org.example.DatabaseAccess</servlet-class>
+</servlet>
+ 
+<servlet-mapping>
+   <servlet-name>DatabaseAccess</servlet-name>
+   <url-pattern>/db</url-pattern>
+</servlet-mapping>
 
   <servlet-mapping>
     <servlet-name>Hello</servlet-name>
