@@ -4,6 +4,22 @@
    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" 
    version="2.5">
+
+  <filter>
+    <filter-name>LogFilter</filter-name>
+    <filter-class>org.example.filters.LogFilter</filter-class>
+    <init-param>
+        <param-name>test-param</param-name>
+        <param-value>Initialization Paramter</param-value>
+    </init-param>
+  </filter>
+
+  <filter-mapping>
+    <filter-name>LogFilter</filter-name>
+    <url-pattern>/*</url-pattern>
+  </filter-mapping>
+
+
   <servlet>
     <servlet-name>Hello</servlet-name>
     <servlet-class>org.example.HelloServlet</servlet-class>
@@ -15,6 +31,10 @@
   <servlet>
     <servlet-name>DHeader</servlet-name>
     <servlet-class>org.example.DisplayHeader</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>NeedsAuth</servlet-name>
+    <servlet-class>org.example.NeedsAuth</servlet-class>
   </servlet>
 
   <servlet-mapping>
@@ -30,5 +50,10 @@
   <servlet-mapping>
     <servlet-name>DHeader</servlet-name>
     <url-pattern>/header/*</url-pattern>
+  </servlet-mapping>
+
+  <servlet-mapping>
+    <servlet-name>NeedsAuth</servlet-name>
+    <url-pattern>/needsauth/*</url-pattern>
   </servlet-mapping>
 </web-app>
